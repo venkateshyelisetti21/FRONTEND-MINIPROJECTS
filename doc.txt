@@ -1,0 +1,11 @@
+This HTML document uses Bootstrap 4.5.2 for styling and layout, creating a responsive webpage for a food-related business. The page is divided into several sections:
+
+Navigation Bar: Includes links to different sections of the page like "Why you choose us?", "Explore menu", "Delivery & payment", and "Follow us". It also features a brand logo on the left side.
+
+Banner Section: Contains a full-screen background image with a headline ("Get Delicious food anytime") and a sub-caption ("it's finger lickin' good."). There are also two buttons: "View button" and "Order now".
+
+Why Choose Us? Section: This section presents reasons to choose the service with three cards highlighting "Food Service," "Fresh Food," and "Best Offers". Each card includes an image, a title, and a description.
+
+Explore Menu Section: Displays different food categories like Non-Veg Starters, Veg Starters, Soups, Fish & Seafood, and Hyderabadi Biryani. Each category is represented by a card with an image, title, and a link to explore more options.
+
+The style is primarily controlled through custom CSS classes defined in the <style> block. The page is designed to be visually appealing with a modern layout and a focus on responsive design, ensuring it looks good on various devices.
