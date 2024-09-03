@@ -1,0 +1,21 @@
+A dynamic web page that allows users to switch between different seasonal images (Spring, Summer, Autumn, and Winter) by clicking on corresponding buttons. The implementation utilizes a combination of HTML, CSS, and JavaScript, with Bootstrap incorporated for responsive design, ensuring that the layout adapts seamlessly across various screen sizes.
+
+HTML Structure
+The HTML structure starts with the standard <!DOCTYPE html> declaration, followed by the <html> tag that encloses the entire document. Inside the <head> section, Bootstrap’s CSS and JavaScript files are linked via CDN to provide responsive design and utility classes. The JavaScript libraries, including jQuery, Popper.js, and Bootstrap’s JS, are essential for handling the responsive behaviors and the dynamic functionality provided by the buttons.
+
+The <body> section houses the primary content of the webpage. Two img tags are defined, each displaying a different image based on the screen size. The first image (smallBg) is displayed on smaller screens (d-inline d-md-none), while the second image (largeBg) is shown on larger screens (d-none d-md-inline). Both images are initially set to display a generic image representing all four seasons.
+
+Below the images, a div element is used to contain the buttons. The d-flex flex-row justify-content-center mt-4 classes from Bootstrap are used to align the buttons centrally within a flexbox layout, ensuring a neat and orderly appearance. The buttons, each corresponding to a different season, have unique classes assigned that are used for styling purposes. The onclick attribute in each button triggers a JavaScript function when the button is clicked.
+
+CSS Styling
+The CSS defined in the <style> section of the document controls the appearance of the images and buttons. The .season-image class sets the images to occupy the full width of their container and a height of 85% of the viewport height, ensuring that the images are large and prominent on the page.
+
+The buttons are styled with a consistent design, defined by the .button class. This class sets the button dimensions, font style, background color, and rounded corners, giving the buttons a modern and uniform look. Each season’s button has a unique background color, defined by additional classes (.spring-button, .summer-button, .autumn-button, .winter-button), which visually distinguishes them according to their corresponding season.
+
+JavaScript Functionality
+The interactivity of the webpage is powered by the JavaScript code in the season-switch.js file. The script begins by selecting the two image elements (smallBg and largeBg) using getElementById, storing them in variables smallImg and largeImg. It then defines several variables, each holding the URL of a seasonal image in two resolutions: one for small screens and one for medium screens.
+
+The core functionality is provided by four functions: springSeason, summerSeason, autumnSeason, and winterSeason. Each function updates the src attributes of the smallImg and largeImg elements with the URLs of the corresponding seasonal images. For example, when the "Spring" button is clicked, the springSeason function changes the image displayed to the spring images, one for small screens and one for larger screens. Similarly, clicking on the "Summer," "Autumn," or "Winter" buttons will call the respective functions, updating the images to those representing the selected season.
+
+Conclusion
+This code offers an elegant solution for displaying seasonal images based on user input. By combining the power of HTML for structure, CSS for styling, and JavaScript for dynamic behavior, the webpage is both visually appealing and highly interactive. The use of Bootstrap ensures that the layout is responsive, providing a consistent user experience across different devices. Overall, the implementation demonstrates a well-structured approach to creating a user-friendly and engaging web application.
