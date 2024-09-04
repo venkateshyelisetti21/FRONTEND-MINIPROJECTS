@@ -285,3 +285,42 @@ The core functionality is provided by four functions: springSeason, summerSeason
 ### Conclusion
 This code offers an elegant solution for displaying seasonal images based on user input. By combining the power of HTML for structure, CSS for styling, and JavaScript for dynamic behavior, the webpage is both visually appealing and highly interactive. The use of Bootstrap ensures that the layout is responsive, providing a consistent user experience across different devices. Overall, the implementation demonstrates a well-structured approach to creating a user-friendly and engaging web application.
 
+
+# 9. [Addition Game](https://github.com/venkateshyelisetti21/FRONTEND-MINIPROJECTS/tree/main/Addition%20Game)
+
+A simple and interactive addition game built using HTML, CSS, and JavaScript. The primary purpose of the game is to engage users in practicing basic arithmetic by summing two randomly generated numbers. It includes a user interface designed with Bootstrap for styling, and JavaScript for functionality, ensuring a seamless user experience.
+
+### Structure and Layout
+The game is structured using standard HTML elements. The <!DOCTYPE html> declaration defines the document type and ensures compatibility across different browsers. The HTML document is divided into three main sections: the head, body, and embedded scripts.
+
+### Head Section
+The head section of the HTML file includes references to external CSS and JavaScript libraries. It links to Bootstrap for styling (bootstrap.min.css) and also includes jQuery, Popper.js, and Bootstrap’s JavaScript files for handling interactivity and responsiveness. Additionally, a custom stylesheet (style.css) is linked to apply specific styles unique to this application.
+
+### Body Section
+The body section contains the main content of the game. The layout centers the game elements using Bootstrap's text-center class, ensuring a visually appealing and user-friendly interface.
+
+Image Display: The game begins with an image loaded from an external URL, adding a visual element to engage users. The image is styled with a defined width and height using a custom class .image.
+
+Game Interface: The core of the game is contained within a div with the class bg-container, which has padding applied to provide spacing. The interface includes:
+
+Two span elements to display the randomly generated numbers (firstNumber and secondNumber).
+An operator (+) displayed between the numbers, indicating that the user should add them.
+An input field where the user can enter their answer (userInput), styled with a .user-input class to make it visually consistent with the rest of the interface.
+Buttons: Two buttons are provided:
+
+The "Check" button (checkButton), which triggers the function to validate the user’s input against the correct sum.
+The "Restart" button (restartButton), which resets the game with new random numbers, clearing any previous input and result.
+Result Display: A p element (gameResult) is used to display feedback based on the user's answer. It changes dynamically depending on whether the user's input is correct or incorrect.
+
+### JavaScript Functionality
+The JavaScript code embedded in the script.js file handles the game’s interactivity:
+
+Set Function: The set() function is invoked when the user clicks the "Check" button. It retrieves the numbers displayed on the screen, calculates their sum, and compares it with the user’s input. If the input is correct, it updates the gameResult with a congratulatory message and changes the background color to green. If incorrect, it prompts the user to try again, with a blue background color indicating an error.
+
+Reset Function: The reset() function generates two new random numbers when the "Restart" button is clicked. These numbers are displayed in the designated span elements, and the input field and result message are cleared, allowing the user to start a new round of the game.
+
+### Styling
+The CSS embedded within the <style> block provides a consistent and appealing look to the game interface. It ensures that elements such as the numbers, input field, and result message are visually distinct and aligned with the overall design theme.
+
+### Conclusion
+This code effectively demonstrates a simple yet interactive way to create an addition game using HTML, CSS, and JavaScript. It provides a user-friendly interface, leveraging Bootstrap for styling, and ensures an engaging experience through dynamic feedback. The game is not only a tool for practicing basic arithmetic but also serves as a foundation for understanding how web-based interactive applications can be built and styled.
