@@ -391,3 +391,80 @@ CSS is used for custom styles, enhancing the visual appeal and layout.
 Bootstrap is leveraged to create a responsive and mobile-friendly design, offering a consistent and professional look.
 JavaScript handles the dynamic behavior, allowing users to interact with the page and see instant visual changes.
 In summary, the code effectively demonstrates how to combine HTML, CSS, and JavaScript to create an interactive, visually appealing web application. By using a combination of modern web development technologies like Bootstrap and JavaScript, the functionality and user experience are both enhanced.
+
+
+# 12. [COUNTER APPLICATION](https://github.com/venkateshyelisetti21/FRONTEND-MINIPROJECTS/tree/main/Counter%20Application)
+
+The application utilizes HTML for the structure, CSS for styling, and JavaScript for the interactivity. Additionally, the Bootstrap framework is integrated for basic layout and responsiveness.
+
+### HTML Structure
+The HTML file begins with the <!DOCTYPE html> declaration, ensuring that the document is recognized as HTML5. The <head> section includes links to external resources, specifically Bootstrap and jQuery libraries. Bootstrap is used for styling and layout management, while jQuery facilitates easy DOM manipulation and event handling.
+
+Inside the <body> tag, custom CSS is defined to style specific elements of the application. The CSS styles define the background color, text alignment, font properties, and button styles. The primary container of the application, represented by the div element with the class bg-container, is centrally aligned using Bootstrap's flexbox utilities (d-flex, flex-column, justify-content-center, text-center), ensuring that the content is vertically and horizontally centered within the viewport.
+
+The application features a heading (Counter), a paragraph element (<p>) to display the counter value, and three buttons (DECREASE, RESET, INCREASE). These buttons trigger the corresponding JavaScript functions (onDecrement, onReset, onIncrement) when clicked.
+
+### JavaScript Interactivity
+The interactivity of the counter application is handled through JavaScript, which is linked in the HTML via an external script file, Counter-application.js. This script contains three primary functions that control the behavior of the counter:
+
+onIncrement(): This function is executed when the "INCREASE" button is clicked. It retrieves the current counter value from the counterValue element, converts it to an integer, increments it by one, and updates the displayed value. Additionally, the text color of the counter changes based on the value: green for positive numbers, red for negative, and black for zero. This visual feedback enhances user experience by immediately conveying whether the counter is positive, negative, or neutral.
+
+onDecrement(): Triggered by the "DECREASE" button, this function behaves similarly to onIncrement(), but it decreases the counter value by one. The color of the counter is also updated according to the value.
+
+onReset(): When the "RESET" button is clicked, this function resets the counter value to zero and changes the text color back to black, indicating a neutral state.
+
+### User Experience and Functionality
+This counter application is designed to be intuitive and user-friendly. The minimalist design, coupled with color-coded feedback, makes it easy for users to understand the current state of the counter. The buttons are clearly labeled, and their functionality is straightforward, ensuring that users can interact with the counter without any confusion.
+
+The use of Bootstrap ensures that the application is responsive, meaning it will display correctly on various devices and screen sizes. The CSS customizations align with the overall design, providing a consistent look and feel.
+
+In conclusion, this counter application serves as a fundamental example of how HTML, CSS, and JavaScript can be combined to create interactive web applications. It effectively demonstrates the power of JavaScript in manipulating the DOM and providing real-time feedback to users, all within a clean and responsive interface facilitated by Bootstrap.
+
+
+# 13. [MOVIE REVIEWS](https://github.com/venkateshyelisetti21/FRONTEND-MINIPROJECTS/tree/main/Movie%20Reviews)
+
+A movie review web application built using HTML, CSS, and JavaScript. The functionality allows users to input a movie title and write a review, which is then displayed on the same page dynamically. The design of the page is styled using Bootstrap for layout and custom CSS for additional styling.
+
+### HTML Structure:
+The HTML document is structured into three main sections:
+1. **Head**: 
+   - External resources such as Bootstrap CSS and JS libraries, jQuery, and Popper.js are included in the head section to style and make the webpage responsive.
+   - A link to the custom CSS file (`style.css`) is provided to apply specific styling defined for the project.
+   
+2. **Body**:
+   - The body contains a `container` class to center the content and add padding at the top (`pt-4`).
+   - The main heading (`Movies Reviews`) is defined inside a `row` and `col-12` grid system, which Bootstrap uses to organize the layout.
+   - An input form is designed with fields for the movie title (input type `text`) and a review (a `textarea`). These fields allow the user to enter data.
+   - A button (`Add`) is provided, and when clicked, it triggers the JavaScript function to display the movie review below the input fields.
+   - Below the form, the `reviewsContainer` div is used to dynamically display the submitted reviews.
+   - The JavaScript (`script.js`) file is loaded at the end of the body for dynamic functionality.
+
+### CSS Styling:
+Custom CSS is applied to enhance the appearance and user experience:
+- **.reviews-heading**: Styles the main heading with a larger font size (36px), bold weight (700), and a dark color (`#2d3a35`) to make it prominent.
+- **.input-label**: This class is applied to the labels (`MOVIE TITLE` and `YOUR REVIEW`). It sets the text color to a grayish hue (`#7b8794`), adjusts font size to 12px, and adds margin for spacing.
+- **.title-input**: Styles the input field for the movie title, giving it a border (`1px solid #cbd2d9`), padding for internal spacing (`padding-left: 12px`), and a subtle border radius for rounded corners.
+- **.review-textarea**: Similar to the title input field, the textarea is styled with borders, padding, and a rounded design, providing a consistent look and feel.
+- **.movie-title**: Applied to the dynamically created movie title headings for each review. The font size is set to 18px, and it is bolded to stand out from the review content.
+
+### JavaScript Functionality:
+The core functionality is implemented in the JavaScript file (`script.js`), which handles user input and dynamically updates the DOM to display the review.
+
+1. **Element References**:
+   - The `getElementById()` method is used to reference the input elements (`titleInput`, `reviewTextarea`) and the button (`addButton`), as well as the container where the reviews will be displayed (`reviewsContainer`).
+
+2. **Button Click Handler**:
+   - An `onclick` event is attached to the "Add" button. When the user clicks the button, the function is triggered to process the input:
+     - It retrieves the values from the movie title input (`titleInput.value`) and the review textarea (`reviewTextarea.value`).
+     - If the movie title is empty, an alert prompts the user to enter a movie name, preventing an empty submission.
+     - If both fields are filled, the function creates new DOM elements to display the review: 
+       - A `h1` element for the movie title, styled with the `movie-title` class.
+       - A `p` element for the review content.
+       - A `hr` element to separate each review visually.
+     - These elements are appended to the `reviewsContainer`, and the input fields are cleared after submission for ease of entering new reviews.
+
+### Bootstrap Integration:
+Bootstrap’s grid system and layout utilities (such as `container`, `row`, `col-12`, `d-flex`, `justify-content-end`, `btn`, and `btn-primary`) are used to handle responsive design and alignment. This helps avoid custom layout code and ensures that the page adjusts properly on different screen sizes.
+
+### Conclusion:
+The project provides a simple yet functional movie review application. It allows users to input movie titles and reviews and dynamically displays them using JavaScript. The combination of Bootstrap for responsive layout, custom CSS for personalized styling, and JavaScript for interactivity makes this project both user-friendly and visually appealing. The logic for handling inputs and dynamically updating the DOM ensures a seamless user experience.
